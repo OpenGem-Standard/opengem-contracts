@@ -1,18 +1,24 @@
 {
   "name": "@opengem/contracts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "files": [
+    "**/*.sol"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OpenGem-Standard/opengem-contracts.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security",
+    "opengem"
+  ],
+  "author": "OpenGem Community",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/OpenGem-Standard/opengem-contracts/issues"
   },
