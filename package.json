@@ -1,9 +1,9 @@
 {
   "name": "@opengem/contracts",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "files": [
-    "/contracts/**/*.sol"
+    "/token/**/*.sol"
   ],
   "repository": {
     "type": "git",

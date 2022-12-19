@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-// OpenGem Contracts (contracts/ERC721/extensions/Example.sol)
+// OpenGem Contracts (contracts/ERC721/extensions/ERC721PermanentURIsExample.sol)
 
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "./ERC721PermanentURIs.sol"; // 0.854 +0.132 +0.396 = 1,382
+import "./ERC721PermanentURIs.sol";
 
 contract ERC721PermanentURIsExample is ERC721, ERC721PermanentURIs {
     constructor(string memory prefixURI, string memory suffixURI)
