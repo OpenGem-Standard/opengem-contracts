@@ -1,6 +1,6 @@
 {
   "name": "@opengem/contracts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenGem-Standard/contracts.git"
+    "url": "git+https://github.com/OpenGem-Standard/opengem-contracts.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OpenGem-Standard/contracts/issues"
+    "url": "https://github.com/OpenGem-Standard/opengem-contracts/issues"
   },
-  "homepage": "https://github.com/OpenGem-Standard/contracts#readme"
+  "homepage": "https://github.com/OpenGem-Standard/opengem-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.1",
+    "hardhat": "^2.10.1",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.7.22"
+  }
 }
