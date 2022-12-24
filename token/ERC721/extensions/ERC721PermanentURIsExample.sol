@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenGem Contracts (contracts/ERC721/extensions/ERC721PermanentURIsExample.sol)
+// OpenGem Contracts (token/ERC721/extensions/ERC721PermanentURIsExample.sol)
 
 pragma solidity ^0.8.9;
 

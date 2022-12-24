@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenGem Contracts (contracts/ERC721/extensions/ERC721PermanentURIs.sol)
+// OpenGem Contracts (token/ERC721/extensions/ERC721PermanentURIs.sol)
 
 pragma solidity ^0.8.0;
 
@@ -45,7 +45,7 @@ abstract contract ERC721PermanentURIs is ERC721 {
     }
 
     function _addPermanentTokenURI(uint256 tokenId, string memory _tokenURI) internal virtual {
-        require(_exists(tokenId), "AssetPersistence: URI set of nonexistent token");
+        require(_exists(tokenId), "ERC721PermanentURIs: PermanentURI set of nonexistent token");
         _tokenURIsPermanent[tokenId].push(_tokenURI);
     }
 
