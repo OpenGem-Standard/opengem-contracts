@@ -6,7 +6,6 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 abstract contract ERC721PermanentProof is ERC721 {
-    using Strings for uint256;
 
     string private _permanentGlobalProof;
     mapping(uint256 => string) private _permanentTokenProofs;
@@ -23,11 +22,13 @@ abstract contract ERC721PermanentProof is ERC721 {
     }
 
     function _setPermanentGlobalProof(string memory _globalProof) internal virtual {
+        require(bytes(_permanentGlobalProof).length == 0, "ERC721PermanentProof: Proof already set");
         _permanentGlobalProof = _globalProof;
     }
 
     function _setPermanentTokenProof(uint256 tokenId, string memory _tokenProof) internal virtual {
         require(_exists(tokenId), "ERC721PermanentProof: Proof set of nonexistent token");
+        require(bytes(_permanentTokenProofs[tokenId]).length == 0, "ERC721PermanentProof: Proof already set");
         _permanentTokenProofs[tokenId] = _tokenProof;
     }
     

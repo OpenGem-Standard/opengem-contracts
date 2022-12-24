@@ -17,6 +17,14 @@ contract ERC721PermanentProofExample is ERC721, ERC721PermanentProof {
         _setPermanentTokenProof(tokenId, tokenProof);
     }
 
+    function setPermanentGlobalProof(string calldata tokenProof) external {
+        _setPermanentGlobalProof(tokenProof);
+    }
+
+    function setPermanentTokenProof(uint256 tokenId, string calldata tokenProof) external {
+        _setPermanentTokenProof(tokenId, tokenProof);
+    }
+
     function _burn(uint256 tokenId) internal override(ERC721, ERC721PermanentProof) {
         super._burn(tokenId);
     }
