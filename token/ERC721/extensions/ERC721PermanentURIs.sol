@@ -44,9 +44,9 @@ abstract contract ERC721PermanentURIs is ERC721 {
         _URIsPermanentIndex++;
     }
 
-    function _addPermanentTokenURI(uint256 tokenId, string memory _tokenURI) internal virtual {
+    function _addPermanentTokenURI(uint256 tokenId, string memory tokenURI_) internal virtual {
         require(_exists(tokenId), "ERC721PermanentURIs: PermanentURI set of nonexistent token");
-        _tokenURIsPermanent[tokenId].push(_tokenURI);
+        _tokenURIsPermanent[tokenId].push(tokenURI_);
     }
 
     function _burn(uint256 tokenId) internal virtual override {
