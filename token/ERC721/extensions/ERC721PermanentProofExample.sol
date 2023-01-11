@@ -7,14 +7,10 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "./ERC721PermanentProof.sol";
 
 contract ERC721PermanentProofExample is ERC721, ERC721PermanentProof {
-    constructor(string memory globalProof)
-        ERC721("ExampleToken", "ETK") {
-            _setPermanentGlobalProof(globalProof);
-    }
+    constructor() ERC721("ExampleToken", "ETK") { }
 
-    function safeMint(address to, uint256 tokenId, string calldata tokenProof) public {
+    function safeMint(address to, uint256 tokenId) public {
         _safeMint(to, tokenId);
-        _setPermanentTokenProof(tokenId, tokenProof);
     }
 
     function setPermanentGlobalProof(string calldata tokenProof) external {
