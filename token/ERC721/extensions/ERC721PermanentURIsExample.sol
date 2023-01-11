@@ -21,8 +21,8 @@ contract ERC721PermanentURIsExample is ERC721, ERC721PermanentURIs {
         _addPermanentTokenURI(tokenId, permanentTokenURI);
     }
 
-    function addPermanentGlobalURIs(string calldata permanentGlobalUri) external {
-        _addPermanentGlobalURIs(permanentGlobalUri);
+    function addPermanentGlobalURI(string calldata permanentGlobalUri) external {
+        _addPermanentGlobalURI(permanentGlobalUri);
     }
 
     function _burn(uint256 tokenId) internal override(ERC721, ERC721PermanentURIs) {

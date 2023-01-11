@@ -59,7 +59,7 @@ abstract contract ERC721PermanentURIs is ERC721 {
         _tokenURIsPermanent[tokenId].push(tokenURI_);
     }
 
-    function _addPermanentGlobalURIs(string memory tokenURI_) internal virtual {
+    function _addPermanentGlobalURI(string memory tokenURI_) internal virtual {
         _globalURIsPermanent.push(tokenURI_);
     }
 

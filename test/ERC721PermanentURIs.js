@@ -46,7 +46,7 @@ describe('ERC721PermanentURIsExample tests', () => {
     })
 
     it('Add global URI', async () => {
-        await token.connect(deployer).addPermanentGlobalURIs("http://global.uri.json") 
+        await token.connect(deployer).addPermanentGlobalURI("http://global.uri.json") 
         uris = await token.tokenURIsPermanent(0)
         expect(uris.length).to.equal(5)
         expect(uris[0]).to.equal("http://global.uri.json")
@@ -57,7 +57,7 @@ describe('ERC721PermanentURIsExample tests', () => {
     })
 
     it('Add another global URI', async () => {
-        await token.connect(deployer).addPermanentGlobalURIs("http://another.global.uri.json") 
+        await token.connect(deployer).addPermanentGlobalURI("http://another.global.uri.json") 
         uris = await token.tokenURIsPermanent(0)
         expect(uris.length).to.equal(6)
         expect(uris[0]).to.equal("http://global.uri.json")
