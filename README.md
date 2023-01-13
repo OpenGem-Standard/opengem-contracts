@@ -22,7 +22,7 @@ import "@opengem/contracts/token/ERC721/extensions/ERC721PermanentURIs.sol";
 
 ## ERC721PermanentURIs
 *ERC721PermanentURIs.sol* is an implementation of **ERC721** with a permanent storage based token URI management.
-It comes with ```_addPermanentBaseURI()```, ```_addPermanentTokenURI()()``` and ```_addPermanentGlobalURIs```. These functions let you add permanent URIs in the contract. By using this implementation, no one can alter or delete these URIs.
+It comes with ```_addPermanentBaseURI()```, ```_addPermanentTokenURI()``` and ```_addPermanentGlobalURIs()```. These functions let you add permanent URIs in the contract. By using this implementation, no one can alter or delete these URIs.
 
 ### _addPermanentBaseURI
 Set your base URIs for all the tokens. ```_addPermanentBaseURI()``` takes two arguments :
