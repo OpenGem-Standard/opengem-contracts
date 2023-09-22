@@ -85,8 +85,8 @@ contract Example is ERC721, ERC721PermanentURIs {
 ```
 In this example, we set a specific Arweave hash for the minted token asset. You can add as many token URIs as you want if you need to multiply permanent storage providers for a token. These URIs are publicly accessible.
 
-### _addPermanentGlobalURIs
-In case all the tokens share the same metadata, you may need to set global URIs. ```_addPermanentGlobalURIs()``` takes one argument :
+### _addPermanentGlobalURI
+In case all the tokens share the same metadata, you may need to set global URIs. ```_addPermanentGlobalURI()``` takes one argument :
 - ```uri``` **(string)**
 
 #### Usage
@@ -99,7 +99,7 @@ import "@opengem/contracts/token/ERC721/extensions/ERC721PermanentURIs.sol";
 contract Example is ERC721, ERC721PermanentURIs {
     constructor()
         ERC721("ExampleToken", "ETK") {
-            _addPermanentGlobalURIs('arweave.net/Yyyy');
+            _addPermanentGlobalURI('arweave.net/Yyyy');
     }
 
     function _burn(uint256 tokenId) internal override(ERC721, ERC721PermanentURIs) {
